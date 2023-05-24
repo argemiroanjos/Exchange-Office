@@ -1,0 +1,107 @@
+body, button, input {
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: #121215;
+  color: #EAEAEA;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 8px;
+}
+
+.container header {
+  display: flex;
+  padding: 32px 0;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container header h1 {
+  background-image: linear-gradient(90deg, #4AC7FA 0%, #E649F5 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+header form {
+  display: flex;
+  max-width: 324px;
+  width: 100%;
+}
+
+header form input {
+  padding: 16px;
+  font-size: 16px;
+  width: 100%;
+  border-radius: 4px 0 0 4px;
+  border: 1px solid transparent;
+  border-right-width: 0;
+  transition: border-color 200ms;
+}
+
+header form input:hover {
+  border-color: #4AC7FA;
+}
+
+header form button {
+width: 56px;
+background: #4AC7FA;
+border-radius: 0 4px 4px 0;
+line-height: 0;
+transition: filter 200ms;
+}
+
+header form button:hover {
+filter: brightness(90%);
+}
+
+.container main {
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* Função para que o container main ocupe 100vh da tela - a altura do header */
+  height: calc(100vh - 149px);
+}
+
+main h2 {
+  text-transform: uppercase;
+  background-image: linear-gradient(90deg, #4AC7FA 0%, #E649F5 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+main ul {
+  list-style: none;
+  margin-top: 32px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
+}
+
+main ul li {
+  background-color: #2f2f32;
+  padding: 16px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid transparent;
+  transition: all 200ms;
+}
+
+main ul li:hover {
+  /* Função para o hover da li deslocar -10px para cima(y) e aumentar a escala de zoom em 120% */
+  transform: translateY(-10px) scale(120%);
+  border-color: #4AC7FA;
+}
+
+main ul li:hover span {
+  color: #95EBA8;
+}
