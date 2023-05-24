@@ -76,7 +76,7 @@ main h2 {
   -webkit-text-fill-color: transparent;
 }
 
-main ul {
+.container main ul {
   list-style: none;
   margin-top: 32px;
   width: 100%;
