@@ -5,7 +5,8 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "dev": "vite --open"
+    "dev": "vite --open",
+    "lint": "eslint ."
   },
   "keywords": [],
   "author": "Argemiro dos Anjos",
