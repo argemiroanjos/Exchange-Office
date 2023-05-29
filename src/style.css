@@ -105,3 +105,74 @@ main ul li:hover {
 main ul li:hover span {
   color: #95EBA8;
 }
+
+/* Modal */
+.swal2-container {
+  backdrop-filter: blur(8px);
+}
+
+.swal2-modal {
+  border-radius: 4px;
+  background-color: #2f2f32;
+  color: #EAEAEA;
+}
+
+.swal2-icon {
+  width: 64px;
+  height: 64px;
+  margin-top: 16px;
+}
+
+.swal2-icon.swal2-error [class^=swal2-x-mark-line] {
+  width: 1.9375em;
+  top: 47%;
+  transform: translateY(-50%);
+}
+
+.swal2-actions {
+  width: 100%;
+  max-width: 268px;
+}
+
+/* Responsividade */
+@media(max-width: 900px) {
+  .container main ul {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media(max-width: 600px) {
+  .container header {
+    flex-direction: column;
+    justify-content: unset;
+    align-items: unset;
+    padding: 16px;
+  }
+
+  .container header h1 {
+    font-size: 24px;
+  }
+  
+  header form {
+    margin-top: 16px;
+    max-width: unset;
+  }
+
+  main h2 {
+    font-size: 18px;
+  }
+
+  .container main ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  main ul li:hover {
+    transform: translateY(-4px) scale(110%);
+  }
+}
+
+@media(max-width: 400px) {
+  .container main ul {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
