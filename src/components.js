@@ -7,19 +7,19 @@ const createLiElement = (name, value) => {
   liElement.innerHTML = `
   <b>${name}</b>
   <span>${value}</span>
-  `
+  `;
   return liElement;
 };
 
 export const renderCoins = (coins, baseCoin) => {
   ulElement.innerHTML = '';
   h2Element.innerHTML = `Valores referentes a 1 ${baseCoin}`;
-  
-  coins.forEach(coin => {
-    const name = coin.name;
-    const value = coin.value;
+
+  coins.forEach((coin) => {
+    const { name } = coin;
+    const { value } = coin;
 
     const liElement = createLiElement(name, value);
-    ulElement.appendChild(liElement)
+    ulElement.appendChild(liElement);
   });
 };
